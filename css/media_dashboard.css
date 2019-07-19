@@ -61,6 +61,8 @@
 }
 
 @media only screen and (max-width: 478px) {
+
+    
     .dashboard_main .service_open_item p {
         display: none;
     }
@@ -71,7 +73,7 @@
 
     
     .dashboard_main .service_open_item {
-        width: 100%;
+        width: 48%;
         text-align: center;
     }
     
@@ -80,7 +82,6 @@
     }
     
     .dashboard_main .service_open {
-        flex-flow: column;
         justify-content: center;
         align-items: center;
         margin-top: 15px;
@@ -138,7 +139,7 @@
     
     .dashboard_left-user .user_btn {
         font-size: 10px;
-        bottom: -30px;
+        bottom: -10px;
     }
     
     .snap-drawer {

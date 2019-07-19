@@ -79,6 +79,7 @@ addEvent(document.getElementById('open-left'), 'click', function(){
 snapper.settings({
     disable: 'right',
     maxPosition: 191,
+    hyperextensible: false,
 });
 
 
