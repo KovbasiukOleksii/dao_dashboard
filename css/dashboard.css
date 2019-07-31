@@ -247,6 +247,8 @@ nav ul, nav li {
       border-bottom: 1px solid #C8C8C8; }
     .table_service .order_table tr:hover {
       box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.25); }
+    .table_service .order_table .title_table {
+      box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.25); }
     .table_service .order_table .status {
       width: 8px; }
     .table_service .order_table .number {
@@ -296,11 +298,14 @@ nav ul, nav li {
       color: #8D8D8D;
       font-size: 10px; }
   .table_service .note {
+    background: #fff;
+    height: 45px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding: 11px 10px;
-    font-size: 12px; }
+    font-size: 12px;
+    box-shadow: 0px -2px 12px rgba(0, 0, 0, 0.25); }
     .table_service .note img {
       margin-bottom: -5px;
       padding-right: 10px; }
@@ -327,6 +332,8 @@ nav ul, nav li {
       height: 40px;
       border-bottom: 1px solid #C8C8C8; }
     .table_service .online_table tr:hover {
+      box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.25); }
+    .table_service .online_table .title_table {
       box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.25); }
     .table_service .online_table .update {
       width: 150px; }
@@ -378,6 +385,8 @@ nav ul, nav li {
       border-bottom: 1px solid #C8C8C8; }
     .table_service .doc_table tr:hover {
       box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.25); }
+    .table_service .doc_table .title_table {
+      box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.25); }
     .table_service .doc_table .number_count {
       width: 30px; }
     .table_service .doc_table .date_invoice {
@@ -393,5 +402,153 @@ nav ul, nav li {
       width: 120px; }
     .table_service .doc_table .dscr {
       color: #9F9F9F; }
+  .table_service .claims_table {
+    border-spacing: 0;
+    width: 100%;
+    font-size: 12px;
+    text-align: center; }
+    .table_service .claims_table thead {
+      display: block;
+      text-align: center; }
+    .table_service .claims_table tbody {
+      display: block;
+      height: 400px;
+      overflow-y: auto;
+      overflow-x: hidden;
+      border-bottom: 1px solid #BDBDBD; }
+    .table_service .claims_table td, .table_service .claims_table th {
+      height: 40px;
+      border-bottom: 1px solid #C8C8C8; }
+    .table_service .claims_table tr:hover {
+      box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.25); }
+    .table_service .claims_table .title_table {
+      box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.25); }
+    .table_service .claims_table .status {
+      width: 8px; }
+    .table_service .claims_table .date {
+      width: 110px; }
+    .table_service .claims_table .mark {
+      width: 90px;
+      text-align: left; }
+    .table_service .claims_table .summ {
+      width: 70px; }
+    .table_service .claims_table .foto {
+      width: 70px; }
+      .table_service .claims_table .foto img {
+        margin-bottom: -5px; }
+    .table_service .claims_table .plant {
+      text-align: left;
+      width: 110px; }
+    .table_service .claims_table .stem {
+      width: 70px; }
+    .table_service .claims_table .comment {
+      text-align: left;
+      width: 260px;
+      font-size: 11px;
+      line-height: 12px; }
+    .table_service .claims_table .not_sent {
+      width: 100%;
+      height: 100%;
+      background-color: #727272; }
+    .table_service .claims_table .accepted {
+      width: 100%;
+      height: 100%;
+      background-color: #E66508; }
+    .table_service .claims_table .done {
+      width: 100%;
+      height: 100%;
+      background-color: #217E01; }
+  .table_service .pref_table {
+    border-spacing: 0;
+    width: 100%;
+    font-size: 12px;
+    text-align: center; }
+    .table_service .pref_table thead {
+      display: block;
+      text-align: center; }
+    .table_service .pref_table tbody {
+      display: block;
+      height: 400px;
+      overflow-y: auto;
+      overflow-x: hidden;
+      border-bottom: 1px solid #BDBDBD; }
+    .table_service .pref_table td, .table_service .pref_table th {
+      height: 40px;
+      border-bottom: 1px solid #C8C8C8; }
+    .table_service .pref_table tr:hover {
+      box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.25); }
+    .table_service .pref_table .title_table {
+      box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.25); }
+    .table_service .pref_table .mark {
+      width: 90px; }
+    .table_service .pref_table .type {
+      width: 80px; }
+    .table_service .pref_table .review {
+      width: 30px; }
+      .table_service .pref_table .review img {
+        margin-bottom: -5px; }
+    .table_service .pref_table .sort {
+      width: 90px;
+      text-align: left; }
+    .table_service .pref_table .plant {
+      width: 110px;
+      text-align: left; }
+    .table_service .pref_table .plant_this {
+      width: 80px; }
+    .table_service .pref_table .country {
+      width: 40px; }
+    .table_service .pref_table .pref {
+      width: 80px; }
+      .table_service .pref_table .pref form {
+        margin-bottom: -5px; }
+      .table_service .pref_table .pref .c1 {
+        height: 0px;
+        margin: 0;
+        opacity: 0;
+        width: 0px; }
+      .table_service .pref_table .pref .prefer {
+        background-color: #E1E1E1;
+        display: inline-block;
+        font-size: 5px;
+        font-weight: bold;
+        padding: 7px;
+        border-radius: 50%; }
+      .table_service .pref_table .pref .neitral {
+        background-color: #E1E1E1;
+        display: inline-block;
+        font-size: 5px;
+        font-weight: bold;
+        padding: 7px;
+        border-radius: 50%; }
+      .table_service .pref_table .pref .stop {
+        background-color: #E1E1E1;
+        display: inline-block;
+        font-size: 5px;
+        font-weight: bold;
+        padding: 7px;
+        border-radius: 50%; }
+      .table_service .pref_table .pref .c1:checked + .prefer {
+        background-color: #299F00; }
+      .table_service .pref_table .pref .c1:checked + .neitral {
+        background-color: #C8C8C8; }
+      .table_service .pref_table .pref .c1:checked + .stop {
+        background-color: #F14E4E; }
+    .table_service .pref_table .comment {
+      width: 150px;
+      text-align: left; }
+  .table_service select {
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    color: #007DC4; }
+  .table_service .info_ord_pref {
+    display: flex;
+    width: 490px;
+    justify-content: space-around; }
+  .table_service .num_ord,
+  .table_service .date_ord,
+  .table_service .track_ord {
+    text-align: center;
+    line-height: 15px; }
 
 /*# sourceMappingURL=dashboard.css.map */
