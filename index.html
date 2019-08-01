@@ -11,7 +11,6 @@
    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
    <link rel="stylesheet" href="css/dashboard.css">
    <link rel="stylesheet" href="css/media_dashboard.css">
-     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
      <script defer src="js/service.js"></script>
 </head>
 <body>
@@ -473,6 +472,24 @@
                         </tbody>
                   </table>
                   <div class="note">
+                      <form>
+                          <label for="start">Дата:</label>
+                          <input type="date" id="start" name="trip-start" data-date-format="dd.mm.YYYY" value="2019-07-18">
+                          <label for="end">-</label>
+                          <input type="date" id="end" name="trip-end" data-date-format="dd.mm.YYYY" value="2019-07-31">
+                          <label for="mark">Марвировка:</label>
+                          <select name="mark" id="mark">
+                                <option value="acura">acura</option>
+                                <option value="acura" selected >Все</option>
+                                <option value="audi" >audi</option>
+                                <option value="an24" >an24</option>
+                                <option value="ak47" >ak47</option>
+                                <option value="toscana" >toscana</option>
+                                <option value="reno" >reno</option>
+                                <option value="ktm" >ktm</option>
+                                <option value="..." >...</option>
+                          </select>
+                      </form>
                   </div>
               </div>
               <div class="table_service">
@@ -712,7 +729,214 @@
                   </div>
               </div>
               <div class="table_service">
-    
+                  <div class="service_title">
+                      <div class="service_title-logo">
+                          <img src="img/icon/sortStat.png" alt="i">
+                          <h3>Статистика закупки сортов</h3>
+                      </div>
+                      <div class="service_title-link">
+                          <a href="#">
+                              Открыть сервис
+                              <img src="img/icon/arrowRight.png" alt="i">
+                          </a>
+                      </div>
+                  </div>
+                  <table class="purchases_table">
+                        <thead>
+                            <tr class="title_table">
+                                <th class="type">Тип цветка</th>
+                                <th class="sort">Сорт</th>
+                                <th class="foto">Фото</th>
+                                <th class="purchases">% закупки по типу:</th>
+                                <th class="end_purchases">Последняя закупка</th>
+                                <th class="feasibility">Выполняемость </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="type">rose</td>
+                                <td class="sort"><a href="#">freedom</a></td>
+                                <td class="foto"><a href="#"><img src="img/foto/freedom.png" alt="i"></a></td>
+                                <td class="purchases">
+                                    <div class="meter">
+                                        <span style="width:28.51%"></span>
+                                        <p>28.51%</p>
+                                    </div>
+                                </td>
+                                <td class="end_purchases">24-07-2019</td>
+                                <td class="feasibility">96.27 %</td>
+                            </tr>
+                            <tr>
+                                <td class="type">rose</td>
+                                <td class="sort"><a href="#">mix color</a></td>
+                                <td class="foto"><a href="#"><img src="img/foto/no_foto.png" alt="i"></a></td>
+                                <td class="purchases">
+                                    <div class="meter">
+                                        <span style="width:8.85%"></span>
+                                        <p>8.85 %</p>
+                                    </div>
+                                </td>
+                                <td class="end_purchases">24-07-2019</td>
+                                <td class="feasibility">100.00%</td>
+                            </tr>
+                            <tr>
+                                <td class="type">rose</td>
+                                <td class="sort"><a href="#">mondial</a></td>
+                                <td class="foto"><a href="#"><img src="img/foto/mondial.png" alt="i"></a></td>
+                                <td class="purchases">
+                                    <div class="meter">
+                                        <span style="width:8.56%"></span>
+                                        <p>8.56 %</p>
+                                    </div>
+                                </td>
+                                <td class="end_purchases">24-07-2019</td>
+                                <td class="feasibility">96.27 %</td>
+                            </tr>
+                            <tr>
+                                <td class="type">rose</td>
+                                <td class="sort"><a href="#">explorer</a></td>
+                                <td class="foto"><a href="#"><img src="img/foto/explorer.png" alt="i"></a></td>
+                                <td class="purchases">
+                                    <div class="meter">
+                                        <span style="width:8.55%"></span>
+                                        <p>8.55 %</p>
+                                    </div>
+                                </td>
+                                <td class="end_purchases">24-07-2019</td>
+                                <td class="feasibility">85.07 %</td>
+                            </tr>
+                            <tr>
+                                <td class="type">rose</td>
+                                <td class="sort"><a href="#">explorer</a></td>
+                                <td class="foto"><a href="#"><img src="img/foto/pink_floyd.png" alt="i"></a></td>
+                                <td class="purchases">
+                                    <div class="meter">
+                                        <span style="width:8.25%"></span>
+                                        <p>8.25 %</p>
+                                    </div>
+                                </td>
+                                <td class="end_purchases">18-07-2019</td>
+                                <td class="feasibility">95.07 %</td>
+                            </tr>
+                            <tr>
+                                <td class="type">rose</td>
+                                <td class="sort"><a href="#">gotcha</a></td>
+                                <td class="foto"><a href="#"><img src="img/foto/gotcha.png" alt="i"></a></td>
+                                <td class="purchases">
+                                    <div class="meter">
+                                        <span style="width:3.61%"></span>
+                                        <p>3.61 %</p>
+                                    </div>
+                                </td>
+                                <td class="end_purchases">18-07-2019</td>
+                                <td class="feasibility">77.77 %</td>
+                            </tr>
+                            <tr>
+                                <td class="type">rose</td>
+                                <td class="sort"><a href="#">pround</a></td>
+                                <td class="foto"><a href="#"><img src="img/foto/proud.png" alt="i"></a></td>
+                                <td class="purchases">
+                                    <div class="meter">
+                                        <span style="width:3.20%"></span>
+                                        <p>3.20 %</p>
+                                    </div>
+                                </td>
+                                <td class="end_purchases">18-07-2019</td>
+                                <td class="feasibility">93.00 %</td>
+                            </tr>
+                            <tr>
+                                <td class="type">rose</td>
+                                <td class="sort"><a href="#">alba</a></td>
+                                <td class="foto"><a href="#"><img src="img/foto/alba.png" alt="i"></a></td>
+                                <td class="purchases">
+                                    <div class="meter">
+                                        <span style="width:2.81%"></span>
+                                        <p>2.81 %</p>
+                                    </div>
+                                </td>
+                                <td class="end_purchases">20-06-2019</td>
+                                <td class="feasibility">100.00 %</td>
+                            </tr>
+                            <tr>
+                                <td class="type">rose</td>
+                                <td class="sort"><a href="#">topaz</a></td>
+                                <td class="foto"><a href="#"><img src="img/foto/topaz.png" alt="i"></a></td>
+                                <td class="purchases">
+                                    <div class="meter">
+                                        <span style="width:2.79%"></span>
+                                        <p>2.79 %</p>
+                                    </div>
+                                </td>
+                                <td class="end_purchases">20-06-2019</td>
+                                <td class="feasibility">73.20 %</td>
+                            </tr>
+                            <tr>
+                                <td class="type">rose</td>
+                                <td class="sort"><a href="#">white chocolate</a></td>
+                                <td class="foto"><a href="#"><img src="img/foto/white_chocolate.png" alt="i"></a></td>
+                                <td class="purchases">
+                                    <div class="meter">
+                                        <span style="width:1.98%"></span>
+                                        <p>1.98 %</p>
+                                    </div>
+                                </td>
+                                <td class="end_purchases">20-06-2019</td>
+                                <td class="feasibility">64.55 %</td>
+                            </tr>
+                            <tr>
+                                <td class="type">rose</td>
+                                <td class="sort"><a href="#">iguazu</a></td>
+                                <td class="foto"><a href="#"><img src="img/foto/iguazu.jpg" alt="i"></a></td>
+                                <td class="purchases">
+                                    <div class="meter">
+                                        <span style="width:1.88%"></span>
+                                        <p>1.88 %</p>
+                                    </div>
+                                </td>
+                                <td class="end_purchases">20-06-2019</td>
+                                <td class="feasibility">89.20 %</td>
+                            </tr>
+                            <tr>
+                                <td class="type">rose</td>
+                                <td class="sort"><a href="#">pink mondial</a></td>
+                                <td class="foto"><a href="#"><img src="img/foto/pink_mondial.jpg" alt="i"></a></td>
+                                <td class="purchases">
+                                    <div class="meter">
+                                        <span style="width:1.13%"></span>
+                                        <p>1.13 %</p>
+                                    </div>
+                                </td>
+                                <td class="end_purchases">20-06-2019</td>
+                                <td class="feasibility">99.20 %</td>
+                            </tr>
+                            <tr>
+                                <td class="type">rose</td>
+                                <td class="sort"><a href="#">nina</a></td>
+                                <td class="foto"><a href="#"><img src="img/foto/nina.jpg" alt="i"></a></td>
+                                <td class="purchases">
+                                    <div class="meter">
+                                        <span style="width:1.09%"></span>
+                                        <p>1.09 %</p>
+                                    </div>
+                                </td>
+                                <td class="end_purchases">20-06-2019</td>
+                                <td class="feasibility">83.77 %</td>
+                            </tr>
+                            <tr>
+                                <td class="type">rose</td>
+                                <td class="sort"><a href="#">charmant</a></td>
+                                <td class="foto"><a href="#"><img src="img/foto/charmant.jpg" alt="i"></a></td>
+                                <td class="purchases">
+                                    <div class="meter">
+                                        <span style="width:0.98%"></span>
+                                        <p>0.98 %</p>
+                                    </div>
+                                </td>
+                                <td class="end_purchases">31-05-2019</td>
+                                <td class="feasibility">63.77 %</td>
+                            </tr>
+                      </tbody>
+                  </table>
               </div>
               <div class="table_service">
     
