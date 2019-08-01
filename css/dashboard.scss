@@ -444,6 +444,15 @@ nav ul,nav li {
             border-bottom: 1px solid #000;
             margin: 0 5px;
         }
+        
+        input[type="submit"] {
+            background: #fff;
+            border: none;
+            font-weight: bold;
+            color: #007DC4;
+            text-transform: uppercase;
+            margin-left: 10px;
+        }
     }
     
     .online_table {
