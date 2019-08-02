@@ -43,7 +43,8 @@
     .table_service .doc_table,
     .table_service .claims_table,
     .table_service .pref_table,
-    .table_service .purchases_table {
+    .table_service .purchases_table,
+    .table_service .monitor_price_table{
         display: none;
     }
     
