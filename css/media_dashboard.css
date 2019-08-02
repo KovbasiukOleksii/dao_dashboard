@@ -1,150 +1,101 @@
-@media only screen and (max-width: 724px) {
-    .dashboard_left-user .user_icon {
-        width: 50px;
-        height: 50px;
-        padding-top: 6%;
-    }
-    
-    .dashboard_left-user .user_info {
-        font-size: 12px;
-        display: inline-block;
-    }
-    .dashboard_left-user .user_info .user_balance {
-        margin-top: 20px;
-    }
-    .dashboard_left-user .user_btn {
-        font-size: 12px;
-    }
-    .dashboard {
-        grid-template-columns: 120px 1fr;
-    }
-    
-    #open-left {
+@media only screen and (max-height: 700px) {
+    .main-menu > ul.logout {
+        position: relative;
         margin-bottom: 30px;
+        margin-top: 30px;
     }
 }
 
 
-@media only screen and (max-width: 682px)  {
-    .dashboard_main .service_open_item .desc {
-        width: 150px;
-    }
-    .dashboard_main .service_open_item {
-        width: 220px;
-        margin-right: 5px;
-    }
-}
-
-@media only screen and (max-width: 650px) {
-    .dashboard_main .service_open_item .desc {
-        width: 200px;
-    }
-    
-    .dashboard_main .service_open_item {
-        width: 260px;
-        margin-right: 5px;
-    }
-    
-    .dashboard_main .service_open_item p {
-        font-size: 12px;
-    }
-}
-
-@media only screen and (max-width: 540px) {
-    .dashboard_header .logo img {
+@media only screen and (max-width: 810px) {
+    .table_service .order_table .mark {
         width: 100px;
     }
-    .dashboard_header .online_tp a {
-        font-size: 12px;
+    
+    .table_service .order_table .mark_row {
+        width: 100px;
+    }
+    .table_service .pref_table .mark {
+        width: 90px;
+    }
+    .table_service .pref_table .comment {
+        width: 120px;
+    }
+    .table_service .note div {
+        margin-right: 10px;
     }
 
 }
 
-@media only screen and (max-width: 478px) {
+@media only screen and (max-width: 760px) {
+    .table_service .order_table .fbconf, .table_service .order_table .fbwait, .table_service .order_table .fbnon {
+        width: 75px;
+    }
+    .table_service .order_table .fbnon_row {
+        width: 75px;
+    }
+}
 
-    
-    .dashboard_main .service_open_item p {
+@media only screen and (max-width: 735px) {
+    .table_service .order_table,
+    .table_service .service_subtitle,
+    .table_service .online_table,
+    .table_service .doc_table,
+    .table_service .claims_table,
+    .table_service .pref_table,
+    .table_service .purchases_table {
         display: none;
     }
     
-    .dashboard_main .service_open_item .desc_other {
+    .table_service .note { 
         display: none;
     }
-
     
-    .dashboard_main .service_open_item {
-        width: 48%;
-        text-align: center;
+    .table_service {
+        height: 100%;
     }
     
-    .dashboard_main .service_open_item .item_img img {
-        margin: 0 auto;
+    .table_service .service_title .service_title-logo h3 span {
+        display: none;
     }
     
-    .dashboard_main .service_open {
-        justify-content: center;
-        align-items: center;
-        margin-top: 15px;
+    .header {
+        height: 35px;
     }
     
-    .dashboard_main .service_open_item .item_img {
-        float: none;
-        margin-right: 0;
-        height: 80px;
+    .main-menu { 
+        top: 35px;
     }
     
-    .dashboard_main .service_open_item h5 {
-        align-items: center;
-        width: 100%;
+    .header .logo img { 
+        width: 100px;
     }
     
-    .dashboard_main .service_open_item .desc {
-        width: 100%;
-        height: 30px;
-    }
-}
-
-
-@media only screen and (max-width: 470px) {
-    
-    .dashboard_left-user .user_icon {
-        padding-top: 11%;
-        width: 30px;
-        height: 30px;
-        font-size: 16px;
-        padding-top: 6%;
-    }
-        
-    .dashboard {
-        grid-template-columns: 80px 1fr;
-        grid-template-rows: 50px calc(100% - 50px);
-    }
-    
-    .dashboard_left-user .user_info {
-        padding: 5px 10px;
-        font-size: 8px;
-    }
-    
-    .dashboard_left-user .user_info .user_date {
-        font-size: 8px;
-    }
-    
-    .dashboard_main {
-        padding: 20px 10px;
-    }
-    
-    .burger_menu a {
+    .header .user { 
         font-size: 12px;
+        line-height: 12px;
     }
-    
-    .dashboard_left-user .user_btn {
-        font-size: 10px;
-        bottom: -10px;
-    }
-    
-    .snap-drawer {
-        background: #414141;
-        width: 200px;
+
+
+} 
+
+@media only screen and (max-width: 645px) {
+    .table_service .service_title .service_title-logo h3 {
+        font-size: 14px;
     }
 }
+
+@media only screen and (max-width: 475px) {
+    .table_service .service_title .service_title-logo {
+        width: 50%;
+    }
     
+    .table_service .service_title {
+        height: 60px;
+    }
+    
+    .service { 
+        margin-top: 50px;
+    }
+
+}
