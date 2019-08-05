@@ -227,7 +227,6 @@ nav ul,nav li {
     h1 {
         font-size: 16px;
         color: #007DC4;
-        line-height: normal;
     }
     
     &_filter {
@@ -272,6 +271,7 @@ nav ul,nav li {
         align-items: center;
         
         &-status {
+            display: none;
             width: 8px;
         }
         
@@ -337,7 +337,7 @@ nav ul,nav li {
     }
     
     .order_items {
-        height: 60vh;
+        height: 75vh;
         overflow-y: scroll;
         text-align: center;
     }
@@ -350,7 +350,25 @@ nav ul,nav li {
         height: 50px;
         border-bottom: 1px solid #C8C8C8;
         
+        .not_send {
+            color: #727272;
+        }
+            
+        .send {
+            color: #007DC4;    
+        }
+        
+        .accepted {
+            color: rgb(230, 101, 8);
+        }
+            
+        .done {
+            color: rgb(33, 126, 1);
+        }
+        
+        
         &-status {
+            display: none;
             width: 8px;
             
             .not_send {
@@ -384,9 +402,21 @@ nav ul,nav li {
         
         &-id {
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
             justify-content: center;
+            align-self: center;
             width: 15%;
+            
+            p {
+                display: block;
+                width: 100%;
+            }
+            
+            .subtitle {
+                font-size: 12px;
+            }
+            
         }
         
         &-date {
@@ -418,6 +448,7 @@ nav ul,nav li {
         &-wait,
         &-lacks {
             display: flex;
+            align-self: center;
             align-items: center;
             justify-content: center;
             width: 10%;
@@ -460,8 +491,10 @@ nav ul,nav li {
             &-icon {
             
                 svg {
-                    fill: #8D8D8D;
-                    padding: 5px 8px;
+                    fill: #4E4E4E;
+                    width: 30px;
+                    height: 30px;
+                    padding: 0px 7px;
                     
                     &:hover {
                         fill: #000;                 

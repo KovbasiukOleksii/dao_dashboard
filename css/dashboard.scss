@@ -93,8 +93,7 @@ body {
     height: 95.5%;
     left: 0;
     width: 40px;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    overflow: hidden;
     -webkit-transition: width .05s linear;
     transition:width .05s linear;
     -webkit-transform:translateZ(0) scale(1,1);
@@ -156,12 +155,12 @@ body {
 }
 
 .no-touch .scrollable.hover {
-    overflow-y:hidden;
+    overflow-y: hidden;
 }
 
 .no-touch .scrollable.hover:hover {
-    overflow-y:auto;
-    overflow:visible;
+    overflow-y: auto;
+    overflow: visible;
 }
 
 a:hover,a:focus {
