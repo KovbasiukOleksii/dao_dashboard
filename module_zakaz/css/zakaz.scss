@@ -503,6 +503,53 @@ nav ul,nav li {
                     }
                 }
             }
+            
+            .tooltip {
+                outline: none;
+                text-decoration: none;
+                position: relative;
+            }
+
+            .tooltip span {
+                margin-left: -999em;
+                position: absolute;
+            }
+
+            .tooltip:hover span {
+                border-radius: 5px 5px; 
+                -moz-border-radius: 5px; 
+                -webkit-border-radius: 5px; 
+                box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); 
+                -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.1); 
+                -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+                position: absolute; 
+                right: 1m;
+                top: 2em; 
+                z-index: 99999;
+                margin-left: -50px;
+                width: 130px;
+                
+            }
+            
+            .tooltip_add:hover span {
+                height: 40px;
+            }
+            
+            .tooltip_view:hover span {
+                height: 22px;
+                width: 100px;
+                margin-left: -27px;
+            }
+
+
+            .dscr {
+                position: relative;
+                font-size: 12px;
+                text-transform: none;
+                color: #fff;
+                background: #4E4E4E;
+                border: 1px solid #fff;
+            }
         }
     }
     

@@ -369,6 +369,39 @@ nav ul, nav li {
           fill: #000;
           border-radius: 50%;
           background: #E0EFF8; }
+      .order_item-menu .tooltip {
+        outline: none;
+        text-decoration: none;
+        position: relative; }
+      .order_item-menu .tooltip span {
+        margin-left: -999em;
+        position: absolute; }
+      .order_item-menu .tooltip:hover span {
+        border-radius: 5px 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+        -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+        position: absolute;
+        right: 1m;
+        top: 2em;
+        z-index: 99999;
+        margin-left: -50px;
+        width: 130px; }
+      .order_item-menu .tooltip_add:hover span {
+        height: 40px; }
+      .order_item-menu .tooltip_view:hover span {
+        height: 22px;
+        width: 100px;
+        margin-left: -27px; }
+      .order_item-menu .dscr {
+        position: relative;
+        font-size: 12px;
+        text-transform: none;
+        color: #fff;
+        background: #4E4E4E;
+        border: 1px solid #fff; }
   .order_item:hover {
     box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.25);
     cursor: pointer; }
