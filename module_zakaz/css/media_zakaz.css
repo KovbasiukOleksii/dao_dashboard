@@ -1,0 +1,102 @@
+@media only screen and (max-height: 700px) {
+    .main-menu > ul.logout {
+        position: relative;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+}
+
+
+@media only screen and (max-width: 810px) {
+    .table_service .order_table .mark {
+        width: 100px;
+    }
+    
+    .table_service .order_table .mark_row {
+        width: 100px;
+    }
+    .table_service .pref_table .mark {
+        width: 90px;
+    }
+    .table_service .pref_table .comment {
+        width: 120px;
+    }
+    .table_service .note div {
+        margin-right: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 760px) {
+    .table_service .order_table .fbconf, .table_service .order_table .fbwait, .table_service .order_table .fbnon {
+        width: 75px;
+    }
+    .table_service .order_table .fbnon_row {
+        width: 75px;
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .table_service .order_table,
+    .table_service .service_subtitle,
+    .table_service .online_table,
+    .table_service .doc_table,
+    .table_service .claims_table,
+    .table_service .pref_table,
+    .table_service .purchases_table,
+    .table_service .monitor_price_table{
+        display: none;
+    }
+    
+    .table_service .note { 
+        display: none;
+    }
+    
+    .table_service {
+        height: 100%;
+    }
+    
+    .table_service .service_title .service_title-logo h3 span {
+        display: none;
+    }
+    
+    .header {
+        height: 35px;
+    }
+    
+    .main-menu { 
+        top: 35px;
+    }
+    
+    .header .logo img { 
+        width: 100px;
+    }
+    
+    .header .user { 
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+
+} 
+
+@media only screen and (max-width: 645px) {
+    .table_service .service_title .service_title-logo h3 {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .table_service .service_title .service_title-logo {
+        width: 50%;
+    }
+    
+    .table_service .service_title {
+        height: 60px;
+    }
+    
+    .service { 
+        margin-top: 50px;
+    }
+
+}
