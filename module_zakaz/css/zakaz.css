@@ -51,12 +51,12 @@
 * {
   margin: 0;
   bottom: 0;
-  box-sizing: border-box;
-  font-family: roboto; }
+  box-sizing: border-box; }
 
 body {
   font-family: 'Roboto', sans-serif;
-  line-height: 1.2em; }
+  line-height: 1.2em;
+  background: #fff; }
 
 .fa {
   position: relative;
@@ -162,8 +162,11 @@ nav ul, nav li {
 
 .area {
   background: #fff;
-  width: 100%;
-  height: 100%; }
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
 
 .header {
   height: 55px;
@@ -175,18 +178,43 @@ nav ul, nav li {
   padding: 5px 20px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   position: fixed;
-  top: 0;
-  z-index: 5; }
+  top: 0; }
   .header .logo img {
     max-width: 155px; }
   .header .user ul {
     list-style: none;
     text-align: right; }
+  .header .log_out-mobile {
+    display: none;
+    font-size: 14px;
+    text-align: center; }
+    .header .log_out-mobile img {
+      width: 20px;
+      margin-bottom: -5px; }
+    .header .log_out-mobile a {
+      text-decoration: none;
+      color: #007DC4; }
+
+#content {
+  z-index: 1; }
+
+#open-left {
+  background-image: url(../img/icon/menu.png);
+  background-repeat: no-repeat;
+  width: 35px;
+  display: inline-block;
+  padding-top: 15px;
+  margin-right: 15px;
+  display: none; }
+
+.snap-drawers .snap-drawer-left {
+  z-index: 0; }
 
 .order {
   margin: 0 auto;
   margin-top: 70px;
-  max-width: 90%; }
+  max-width: 95%;
+  padding-left: 50px; }
   .order h1 {
     font-size: 16px;
     color: #007DC4; }
@@ -211,6 +239,14 @@ nav ul, nav li {
       border-bottom: 1px solid #000;
       outline: none;
       color: #007DC4; }
+  .order_new-mobile {
+    display: none;
+    position: fixed;
+    bottom: 5%;
+    right: 10px;
+    z-index: 9999; }
+    .order_new-mobile img {
+      width: 40px; }
   .order_title {
     text-align: center;
     display: flex;
@@ -219,7 +255,6 @@ nav ul, nav li {
     height: 50px;
     align-items: center; }
     .order_title-status {
-      display: none;
       width: 8px; }
     .order_title-id {
       display: flex;
@@ -247,6 +282,8 @@ nav ul, nav li {
       align-items: center;
       justify-content: center;
       width: 10%; }
+      .order_title-bayfb .light_title, .order_title-confirmed .light_title, .order_title-wait .light_title, .order_title-lacks .light_title {
+        display: none; }
     .order_title-track {
       display: flex;
       align-items: center;
@@ -261,16 +298,26 @@ nav ul, nav li {
       width: 260px;
       background: #fff;
       padding-right: 30px; }
+  .order_title-mobile {
+    display: none;
+    justify-content: space-between;
+    background: #E9E9E9;
+    height: 40px;
+    font-size: 12px;
+    align-items: center;
+    padding: 0 10px; }
+    .order_title-mobile .date_mobile {
+      text-align: right; }
   .order .order_items {
     height: 75vh;
-    overflow-y: scroll;
+    overflow-y: auto;
     text-align: center; }
   .order_item {
     position: relative;
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 50px;
+    height: 45px;
     border-bottom: 1px solid #C8C8C8; }
     .order_item .not_send {
       color: #727272; }
@@ -281,27 +328,26 @@ nav ul, nav li {
     .order_item .done {
       color: #217e01; }
     .order_item-status {
-      display: none;
       width: 8px; }
       .order_item-status .not_send {
         display: block;
         width: 100%;
-        height: 47px;
+        height: 44px;
         background-color: #727272; }
       .order_item-status .send {
         display: block;
         width: 100%;
-        height: 47px;
+        height: 44px;
         background-color: #007DC4; }
       .order_item-status .accepted {
         display: block;
         width: 100%;
-        height: 47px;
+        height: 44px;
         background-color: #e66508; }
       .order_item-status .done {
         display: block;
         width: 100%;
-        height: 47px;
+        height: 44px;
         background-color: #217e01; }
     .order_item-id {
       display: flex;
@@ -357,7 +403,7 @@ nav ul, nav li {
       right: 0;
       top: 0;
       bottom: 0;
-      width: 260px;
+      width: 250px;
       background: #fff;
       padding-right: 30px; }
       .order_item-menu-icon svg {
@@ -380,9 +426,6 @@ nav ul, nav li {
         border-radius: 5px 5px;
         -moz-border-radius: 5px;
         -webkit-border-radius: 5px;
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-        -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
-        -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
         position: absolute;
         right: 1m;
         top: 2em;
@@ -393,8 +436,8 @@ nav ul, nav li {
         height: 40px; }
       .order_item-menu .tooltip_view:hover span {
         height: 22px;
-        width: 100px;
-        margin-left: -27px; }
+        width: 80px;
+        margin-left: -25px; }
       .order_item-menu .dscr {
         position: relative;
         font-size: 12px;
@@ -409,5 +452,15 @@ nav ul, nav li {
     display: flex;
     justify-content: space-around;
     align-items: center; }
+
+footer {
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: #E9E9E9;
+  display: none; }
 
 /*# sourceMappingURL=zakaz.css.map */

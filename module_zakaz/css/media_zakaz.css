@@ -7,59 +7,114 @@
 }
 
 
-@media only screen and (max-width: 810px) {
-    .table_service .order_table .mark {
-        width: 100px;
+@media only screen and (max-width: 1330px) {
+    .big_title {
+        display: none;
+    } 
+    .order_title-bayfb .light_title, 
+    .order_title-confirmed .light_title, 
+    .order_title-wait .light_title, 
+    .order_title-lacks .light_title {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 1190px) {
+    .order_item {
+        height: 40px;
     }
     
-    .table_service .order_table .mark_row {
-        width: 100px;
+    .order_item-status .not_send,
+    .order_item-status .send,
+    .order_item-status .accepted,
+    .order_item-status .done {
+        height: 38px;
     }
-    .table_service .pref_table .mark {
-        width: 90px;
+    
+    .order_item-id {
+        min-width: 110px;
     }
-    .table_service .pref_table .comment {
-        width: 120px;
+    
+    .order_title-id {
+        width: 95px;
     }
-    .table_service .note div {
-        margin-right: 10px;
+    
+    .order_item-mark,
+    .order_title-mark {
+        width: 11%;
+    }
+    
+    .order_title-mark {
+        width: 10%;
+    }
+    
+    .order_item-bayfb,
+    .order_item-confirmed,
+    .order_item-wait,
+    .order_item-lacks {
+        min-width: 108px;
+    }
+    
+    .order_item-bayfb
+    
+    
+    .order_item-status,
+    .order_title-status {
+        width: 5px;
+    }
+    
+    .order_item-bayfb .pso,
+    .order_item-confirmed .pso,
+    .order_item-wait .pso,
+    .order_item-lacks .pso {
+        font-size: 11px;
+    }
+    
+    .order_item-id .subtitle {
+        font-size: 11px;
     }
 
 }
 
-@media only screen and (max-width: 760px) {
-    .table_service .order_table .fbconf, .table_service .order_table .fbwait, .table_service .order_table .fbnon {
-        width: 75px;
+@media only screen and (max-width: 960px) {
+    .main-menu {
+        display: none;
     }
-    .table_service .order_table .fbnon_row {
-        width: 75px;
+    .order {
+        padding-left: 0;
+    }
+    
+    .header .log_out-mobile  {
+        display: block;
+        position: absolute;
+        right: 30px;
+        bottom: 10px;
+    }
+    
+    .user {
+        margin-left: -15px;
+    }
+    
+    .user ul li{
+        text-align: left;
+    }
+    
+    .header {
+        justify-content: flex-start;
+    }
+    
+    #open-left {
+        display: block;
     }
 }
 
-@media only screen and (max-width: 735px) {
-    .table_service .order_table,
-    .table_service .service_subtitle,
-    .table_service .online_table,
-    .table_service .doc_table,
-    .table_service .claims_table,
-    .table_service .pref_table,
-    .table_service .purchases_table,
-    .table_service .monitor_price_table{
-        display: none;
-    }
-    
-    .table_service .note { 
-        display: none;
-    }
-    
-    .table_service {
-        height: 100%;
-    }
-    
-    .table_service .service_title .service_title-logo h3 span {
-        display: none;
-    }
-    
+@media only screen and (min-width: 960px) {
+    #content {
+        transform: none!important;
+    }    
+}
+
+@media only screen and (max-width: 893px) {
     .header {
         height: 35px;
     }
@@ -76,27 +131,63 @@
         font-size: 12px;
         line-height: 12px;
     }
-
-
-} 
-
-@media only screen and (max-width: 645px) {
-    .table_service .service_title .service_title-logo h3 {
-        font-size: 14px;
+    
+    .order_filter {
+        font-size: 12px;
+    }
+    
+    .order_item {
+        font-size: 12px;
+    }
+    
+    .order_title {
+        font-size: 12px;
+    }
+    
+    .header .log_out-mobile {
+        font-size: 12px;
+        bottom: 0;
+    }
+    
+    .header .log_out-mobile img {
+        width: 15px;
     }
 }
 
-@media only screen and (max-width: 475px) {
-    .table_service .service_title .service_title-logo {
-        width: 50%;
-    }
-    
-    .table_service .service_title {
-        height: 60px;
-    }
-    
-    .service { 
+@media only screen and (max-width: 820px) {
+    .order {
         margin-top: 50px;
     }
+    
+    .order_new {
+        display: none;
+    }
+    
+    .order_new-mobile {
+        display: block;
+    }
+    
+    .order .order_items {
+        height: 80vh;
+    }
+    
+    footer {
+        display: block;
+    }
+    
+    .order_title-mobile {
+        display: flex;
+    }
+    
+    .order_title {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 645px) {
+    
+}
+
+@media only screen and (max-width: 475px) {
 
 }
