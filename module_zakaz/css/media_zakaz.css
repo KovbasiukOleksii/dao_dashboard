@@ -172,22 +172,142 @@
     }
     
     footer {
-        display: block;
+        display: flex;
+    }
+    
+    .mark_order {
+        margin-bottom: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .order {
+        width: 100%;
+    }
+    
+    .order_item:hover {
+        box-shadow: none;
+    }
+    
+    .order h1 {
+        padding-left: 16px;
+    }
+    
+    .mark_order {
+        padding-left: 16px;
     }
     
     .order_title-mobile {
         display: flex;
     }
     
+    .order_title-mobile {
+        padding: 0 16px;
+    }
+    
     .order_title {
         display: none;
     }
+    
+    .type_order {
+        display: none;
+    }
+    
+    .order_item-menu {
+        display: none!important;
+    }
+    
+    .order .order_items {
+        height: 78vh;
+    }
+    
+    .order_item {
+        position: none;
+        height: 85px;
+        padding: 7px 0;
+        font-size: 14px;
+    }
+    
+    .order_item-status,
+    .order_item-id,
+    .order_item-date,
+    .order_item-mark,
+    .order_item-bayfb,
+    .order_item-confirmed,
+    .order_item-wait,
+    .order_item-lacks,
+    .order_item-track {
+        display: none;
+    }
+    
+    .order_new-mobile {
+        right: 20px;
+    }
+    
+    .order_item_mobile {
+        display: flex;
+    }
 }
 
-@media only screen and (max-width: 645px) {
+@media only screen and (max-width: 625px) {
+    .mobile_bay-fb {
+        width: 100%;
+    }
+    
+    .order_item {
+        height: 95px;
+    }
+    .order_item_mobile-main-fb span {
+        display: block;
+        margin-top: -6px;
+        font-size: 10px;
+    }
+    
+    .order_item_mobile-main-fb .fb {
+        margin-top: -3px;
+    }
+    
+    .order_item_mobile-main-fb .not_fb {
+        margin-top: -3px;
+        
+    }
+    
+    .order_item_mobile-main-fb p {
+        width: 100px;
+    }
+    
+    .mobile_bay-fb:last-child {
+        width: 50px;
+    }
+
+}
+
+@media only screen and (max-width: 481px) {
+    .order_item_mobile {
+        margin: 0 10px;
+    }
+    
+    .order_item_mobile-main-fb span {
+        font-size: 8px;
+    }
+    
+    .order_item_mobile-main-fb p {
+        width: 100%;
+    }
+    
+    .order_new-mobile {
+        bottom: 7%;
+        right: 5px;
+    }
+    
     
 }
 
-@media only screen and (max-width: 475px) {
 
-}
+
+
+
+
+
+

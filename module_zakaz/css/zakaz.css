@@ -126,8 +126,7 @@ body {
   position: relative;
   display: table-cell;
   vertical-align: middle;
-  width: 230px;
-  font-family: 'Titillium Web', sans-serif; }
+  width: 230px; }
 
 .main-menu > ul.logout {
   position: absolute;
@@ -170,7 +169,6 @@ nav ul, nav li {
 
 .header {
   height: 55px;
-  width: 100%;
   background: #E9E9E9;
   display: flex;
   justify-content: space-between;
@@ -178,7 +176,10 @@ nav ul, nav li {
   padding: 5px 20px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   position: fixed;
-  top: 0; }
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999999999999; }
   .header .logo img {
     max-width: 155px; }
   .header .user ul {
@@ -213,7 +214,7 @@ nav ul, nav li {
 .order {
   margin: 0 auto;
   margin-top: 70px;
-  max-width: 95%;
+  width: 95%;
   padding-left: 50px; }
   .order h1 {
     font-size: 16px;
@@ -445,6 +446,88 @@ nav ul, nav li {
         color: #fff;
         background: #4E4E4E;
         border: 1px solid #fff; }
+    .order_item_mobile {
+      margin: 0 16px;
+      display: none;
+      text-align: left;
+      width: 100%; }
+      .order_item_mobile-status {
+        width: 45px; }
+        .order_item_mobile-status img {
+          margin-top: 5px;
+          width: 30px; }
+      .order_item_mobile-main {
+        width: 100%;
+        display: flex;
+        flex-flow: column; }
+        .order_item_mobile-main-title {
+          display: flex;
+          justify-content: space-between;
+          border-bottom: 1px solid #E9E9E9; }
+          .order_item_mobile-main-title .mark_mobile {
+            flex: 4; }
+            .order_item_mobile-main-title .mark_mobile .mark {
+              color: #007DC4;
+              font-weight: bold; }
+            .order_item_mobile-main-title .mark_mobile .id {
+              flex: 10;
+              color: #414141;
+              font-size: 12px; }
+          .order_item_mobile-main-title .date_mobile {
+            flex: 8;
+            text-align: right; }
+            .order_item_mobile-main-title .date_mobile .date {
+              color: #007DC4;
+              font-size: 12px; }
+              .order_item_mobile-main-title .date_mobile .date span {
+                color: #9F9F9F;
+                font-size: 12px; }
+            .order_item_mobile-main-title .date_mobile .track {
+              color: #414141;
+              font-size: 12px; }
+          .order_item_mobile-main-title .dropdown {
+            position: relative; }
+          .order_item_mobile-main-title img {
+            margin-left: 15px;
+            margin-right: -7px;
+            margin-top: 5px;
+            width: 25px; }
+          .order_item_mobile-main-title .menu_mobile {
+            position: absolute;
+            left: -260px;
+            top: 30px;
+            background: #fff;
+            z-index: 200;
+            height: 130px;
+            width: 300px;
+            border: 1px solid #C8C8C8;
+            border-radius: 5px;
+            padding: 5px;
+            display: none; }
+            .order_item_mobile-main-title .menu_mobile li {
+              list-style: none;
+              padding: 5px; }
+              .order_item_mobile-main-title .menu_mobile li a {
+                color: #007DC4;
+                text-decoration: none; }
+          .order_item_mobile-main-title .dropdown:hover > ul {
+            display: block; }
+        .order_item_mobile-main-fb {
+          display: flex;
+          justify-content: space-between; }
+          .order_item_mobile-main-fb span {
+            font-size: 10px; }
+          .order_item_mobile-main-fb p {
+            width: 130px; }
+          .order_item_mobile-main-fb .title {
+            font-size: 13px; }
+          .order_item_mobile-main-fb .fb {
+            color: #4F4F4F;
+            font-size: 12px; }
+          .order_item_mobile-main-fb .not_fb {
+            font-size: 12px;
+            color: #C50000;
+            width: 50px; }
   .order_item:hover {
     box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.25);
     cursor: pointer; }
@@ -455,12 +538,24 @@ nav ul, nav li {
 
 footer {
   position: fixed;
-  z-index: 999;
+  z-index: 100;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 40px;
+  height: 50px;
   background: #E9E9E9;
-  display: none; }
+  display: none;
+  justify-content: space-around;
+  padding: 5px 0; }
+  footer .info_status {
+    font-size: 10px;
+    text-align: center;
+    width: 80px;
+    line-height: 10px; }
+    footer .info_status img {
+      width: 18px; }
+    footer .info_status a {
+      text-decoration: none;
+      color: #414141; }
 
 /*# sourceMappingURL=zakaz.css.map */
