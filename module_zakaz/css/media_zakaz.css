@@ -258,6 +258,11 @@
     .order_item {
         height: 95px;
     }
+    
+    .order .order_items {
+        height: 68.4vh;
+    }
+    
     .order_item_mobile-main-fb span {
         display: block;
         margin-top: -6px;
@@ -280,6 +285,8 @@
     .mobile_bay-fb:last-child {
         width: 50px;
     }
+    
+    
 
 }
 
