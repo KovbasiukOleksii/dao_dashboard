@@ -196,7 +196,7 @@ nav ul,nav li {
 
 .header {
     height: 55px;
-    background: #E9E9E9;
+    background: #F2F2F2;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -259,13 +259,22 @@ nav ul,nav li {
 .burger_menu {
     padding-top: 10px;
     padding-bottom: 70px;
+    
     ul {
         list-style: none;
         padding-left: 12px;
+
         
         li {
+            display: inline-block;
             padding-bottom: 7px;
             width: 200px;
+            
+            span {
+                display: inline-block;
+                width: 165px;
+            }
+            
             
             a {
                 text-decoration: none;
@@ -419,19 +428,6 @@ nav ul,nav li {
         }
     }
     
-    &_title-mobile {
-        display: none;
-        justify-content: space-between;
-        background: #E9E9E9;
-        height: 40px;
-        font-size: 12px;
-        align-items: center;
-        padding: 0 10px;
-        
-        .date_mobile {
-            text-align: right;
-        }
-    }
     
     .order_items {
         height: 75vh;
@@ -444,7 +440,7 @@ nav ul,nav li {
         display: flex;
         justify-content: space-between;
         width: 100%;
-        height: 45px;
+        height: 66px;
         border-bottom: 1px solid #C8C8C8;
         
         .not_send {
@@ -470,29 +466,29 @@ nav ul,nav li {
             .not_send {
                 display: block;
                 width: 100%;
-                height: 44px;
-                background-color: #727272;
+                height: 64px;
+                background-color: #E1E1E1;
             }
-            
+
             .send {
                 display: block;
                 width: 100%;
-                height: 44px;
-                background-color: #007DC4;    
+                height: 64px;
+                background-color: #F2EDBF;    
             }
-            
+
             .accepted {
                 display: block;
                 width: 100%;
-                height: 44px;
-                background-color: rgb(230, 101, 8);
+                height: 64px;
+                background-color: #CDDDFA;
             }
-            
+
             .done {
                 display: block;
                 width: 100%;
-                height: 44px;
-                background-color: rgb(33, 126, 1);
+                height: 64px;
+                background-color: #DDFFDE;
             }
         }
         
@@ -646,17 +642,43 @@ nav ul,nav li {
         }
         
         &_mobile {
-            margin: 0 16px;
+            margin: 0 5px;
             display: none;
             text-align: left;
             width: 100%;
             
             &-status {
-                width: 45px;
-                
-                img {
-                    margin-top: 5px;
-                    width: 30px;
+                width: 4px;
+                margin-right: 5px;
+                margin-top: 3px;
+
+
+                .not_send {
+                    display: block;
+                    width: 100%;
+                    height: 64px;
+                    background-color: #E1E1E1;
+                }
+
+                .send {
+                    display: block;
+                    width: 100%;
+                    height: 64px;
+                    background-color: #F2EDBF;    
+                }
+
+                .accepted {
+                    display: block;
+                    width: 100%;
+                    height: 64px;
+                    background-color: #CDDDFA;
+                }
+
+                .done {
+                    display: block;
+                    width: 100%;
+                    height: 64px;
+                    background-color: #DDFFDE;
                 }
             }
             
@@ -668,7 +690,6 @@ nav ul,nav li {
                 &-title {
                     display: flex;
                     justify-content: space-between;
-                    border-bottom: 1px solid #E9E9E9;
                     
                     .mark_mobile {
                         flex: 4;
@@ -680,14 +701,16 @@ nav ul,nav li {
                         }
 
                         .id {
-                            flex: 10;
-                            color: #414141;
+                            flex: 5;
+                            color: #9F9F9F;
                             font-size: 12px;
+                            margin-top: -3px;
+                            
                         }
                     }
                     
                     .date_mobile {
-                        flex: 8;
+                        flex: 5;
                         text-align: right;
                         
                         .date {
@@ -703,6 +726,7 @@ nav ul,nav li {
                         .track {
                             color: #414141;
                             font-size: 12px;
+                            margin-top: -3px;
                         }   
                     }
                     
@@ -712,16 +736,16 @@ nav ul,nav li {
                     
                                             
                     img {
-                        margin-left: 15px;
-                        margin-right: -7px;
-                        margin-top: 5px;
+                        margin-left: 5px;
                         width: 25px;
+                        position: relative;
+                        top: 20px;
                     }
                     
                     .menu_mobile {
                         position: absolute;
-                        left: -260px;
-                        top: 30px;
+                        left: -270px;
+                        top: 20px;
                         background: #fff;
                         z-index: 200;
                         height: 130px;
@@ -772,8 +796,13 @@ nav ul,nav li {
                     
                     .not_fb {
                         font-size: 12px;
-                        color: #C50000;
-                        width: 50px;
+                        padding-right: 31px;
+                        text-align: right;
+                        
+                        .no_fb {
+                            color: #C50000;
+                            margin-top: -3px;
+                        }
                     }
                 }
             }
@@ -798,26 +827,33 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 50px;
-    background: #E9E9E9;
+    height: 28px;
+    background: #414141;
     display: none;
     justify-content: space-around;
     padding: 5px 0;
+    box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
     
     .info_status {
         font-size: 10px;
         text-align: center;
-        width: 80px;
+        width: 100px;
         line-height: 10px;
         
-        img {
-            width: 18px;
+        p {
+            color: #fff;
+                
+            img {
+                width: 5px;
+                margin-bottom: -4px;
+            }
+        
+            a {
+                text-decoration: none;
+                color: #414141;
+            }
         }
         
-        a {
-            text-decoration: none;
-            color: #414141;
-        }
     }
 }
 

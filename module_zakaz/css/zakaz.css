@@ -169,7 +169,7 @@ nav ul, nav li {
 
 .header {
   height: 55px;
-  background: #E9E9E9;
+  background: #F2F2F2;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -218,8 +218,12 @@ nav ul, nav li {
     list-style: none;
     padding-left: 12px; }
     .burger_menu ul li {
+      display: inline-block;
       padding-bottom: 7px;
       width: 200px; }
+      .burger_menu ul li span {
+        display: inline-block;
+        width: 165px; }
       .burger_menu ul li a {
         text-decoration: none;
         color: #007DC4; }
@@ -320,16 +324,6 @@ nav ul, nav li {
       width: 260px;
       background: #fff;
       padding-right: 30px; }
-  .order_title-mobile {
-    display: none;
-    justify-content: space-between;
-    background: #E9E9E9;
-    height: 40px;
-    font-size: 12px;
-    align-items: center;
-    padding: 0 10px; }
-    .order_title-mobile .date_mobile {
-      text-align: right; }
   .order .order_items {
     height: 75vh;
     overflow-y: auto;
@@ -339,7 +333,7 @@ nav ul, nav li {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 45px;
+    height: 66px;
     border-bottom: 1px solid #C8C8C8; }
     .order_item .not_send {
       color: #727272; }
@@ -354,23 +348,23 @@ nav ul, nav li {
       .order_item-status .not_send {
         display: block;
         width: 100%;
-        height: 44px;
-        background-color: #727272; }
+        height: 64px;
+        background-color: #E1E1E1; }
       .order_item-status .send {
         display: block;
         width: 100%;
-        height: 44px;
-        background-color: #007DC4; }
+        height: 64px;
+        background-color: #F2EDBF; }
       .order_item-status .accepted {
         display: block;
         width: 100%;
-        height: 44px;
-        background-color: #e66508; }
+        height: 64px;
+        background-color: #CDDDFA; }
       .order_item-status .done {
         display: block;
         width: 100%;
-        height: 44px;
-        background-color: #217e01; }
+        height: 64px;
+        background-color: #DDFFDE; }
     .order_item-id {
       display: flex;
       flex-wrap: wrap;
@@ -468,34 +462,53 @@ nav ul, nav li {
         background: #4E4E4E;
         border: 1px solid #fff; }
     .order_item_mobile {
-      margin: 0 16px;
+      margin: 0 5px;
       display: none;
       text-align: left;
       width: 100%; }
       .order_item_mobile-status {
-        width: 45px; }
-        .order_item_mobile-status img {
-          margin-top: 5px;
-          width: 30px; }
+        width: 4px;
+        margin-right: 5px;
+        margin-top: 3px; }
+        .order_item_mobile-status .not_send {
+          display: block;
+          width: 100%;
+          height: 64px;
+          background-color: #E1E1E1; }
+        .order_item_mobile-status .send {
+          display: block;
+          width: 100%;
+          height: 64px;
+          background-color: #F2EDBF; }
+        .order_item_mobile-status .accepted {
+          display: block;
+          width: 100%;
+          height: 64px;
+          background-color: #CDDDFA; }
+        .order_item_mobile-status .done {
+          display: block;
+          width: 100%;
+          height: 64px;
+          background-color: #DDFFDE; }
       .order_item_mobile-main {
         width: 100%;
         display: flex;
         flex-flow: column; }
         .order_item_mobile-main-title {
           display: flex;
-          justify-content: space-between;
-          border-bottom: 1px solid #E9E9E9; }
+          justify-content: space-between; }
           .order_item_mobile-main-title .mark_mobile {
             flex: 4; }
             .order_item_mobile-main-title .mark_mobile .mark {
               color: #007DC4;
               font-weight: bold; }
             .order_item_mobile-main-title .mark_mobile .id {
-              flex: 10;
-              color: #414141;
-              font-size: 12px; }
+              flex: 5;
+              color: #9F9F9F;
+              font-size: 12px;
+              margin-top: -3px; }
           .order_item_mobile-main-title .date_mobile {
-            flex: 8;
+            flex: 5;
             text-align: right; }
             .order_item_mobile-main-title .date_mobile .date {
               color: #007DC4;
@@ -505,18 +518,19 @@ nav ul, nav li {
                 font-size: 12px; }
             .order_item_mobile-main-title .date_mobile .track {
               color: #414141;
-              font-size: 12px; }
+              font-size: 12px;
+              margin-top: -3px; }
           .order_item_mobile-main-title .dropdown {
             position: relative; }
           .order_item_mobile-main-title img {
-            margin-left: 15px;
-            margin-right: -7px;
-            margin-top: 5px;
-            width: 25px; }
+            margin-left: 5px;
+            width: 25px;
+            position: relative;
+            top: 20px; }
           .order_item_mobile-main-title .menu_mobile {
             position: absolute;
-            left: -260px;
-            top: 30px;
+            left: -270px;
+            top: 20px;
             background: #fff;
             z-index: 200;
             height: 130px;
@@ -547,8 +561,11 @@ nav ul, nav li {
             font-size: 12px; }
           .order_item_mobile-main-fb .not_fb {
             font-size: 12px;
-            color: #C50000;
-            width: 50px; }
+            padding-right: 31px;
+            text-align: right; }
+            .order_item_mobile-main-fb .not_fb .no_fb {
+              color: #C50000;
+              margin-top: -3px; }
   .order_item:hover {
     box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.25);
     cursor: pointer; }
@@ -563,20 +580,24 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 50px;
-  background: #E9E9E9;
+  height: 28px;
+  background: #414141;
   display: none;
   justify-content: space-around;
-  padding: 5px 0; }
+  padding: 5px 0;
+  box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25); }
   footer .info_status {
     font-size: 10px;
     text-align: center;
-    width: 80px;
+    width: 100px;
     line-height: 10px; }
-    footer .info_status img {
-      width: 18px; }
-    footer .info_status a {
-      text-decoration: none;
-      color: #414141; }
+    footer .info_status p {
+      color: #fff; }
+      footer .info_status p img {
+        width: 5px;
+        margin-bottom: -4px; }
+      footer .info_status p a {
+        text-decoration: none;
+        color: #414141; }
 
 /*# sourceMappingURL=zakaz.css.map */
