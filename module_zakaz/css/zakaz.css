@@ -69,7 +69,7 @@ body {
 
 .main-menu:hover, nav.main-menu.expanded {
   width: 200px;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden; }
 
 .main-menu {
@@ -81,7 +81,7 @@ body {
   height: 95.5%;
   left: 0;
   width: 40px;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
   -webkit-transition: width .05s linear;
   transition: width .05s linear;
@@ -211,6 +211,24 @@ nav ul, nav li {
 .snap-drawers .snap-drawer-left {
   z-index: 0; }
 
+.burger_menu {
+  padding-top: 10px;
+  padding-bottom: 70px; }
+  .burger_menu ul {
+    list-style: none;
+    padding-left: 12px; }
+    .burger_menu ul li {
+      padding-bottom: 7px;
+      width: 200px; }
+      .burger_menu ul li a {
+        text-decoration: none;
+        color: #007DC4; }
+      .burger_menu ul li img {
+        display: inline-block;
+        margin-top: -3px;
+        padding-right: 5px;
+        width: 18px; }
+
 .order {
   margin: 0 auto;
   margin-top: 70px;
@@ -240,6 +258,8 @@ nav ul, nav li {
       border-bottom: 1px solid #000;
       outline: none;
       color: #007DC4; }
+  .order .date_filter {
+    display: inline-block; }
   .order_new-mobile {
     display: none;
     position: fixed;

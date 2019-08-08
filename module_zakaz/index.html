@@ -21,15 +21,21 @@
 		<div class="snap-drawer snap-drawer-left">
 			<div class="burger_menu">
 				<ul>
-					<li><img src="" alt="i"><a href="index.html">Главная</a></li>
-					<li><img src="" alt="i"><a href="catalog_flower/index.html">Каталог цветов</a></li>
-					<li><img src="" alt="i"><a href="catalog_plant/index.html">Каталог плантаций</a></li>
-					<li><img src="" alt="i"><a href="#">Сервисы</a></li>
-					<li><img src="" alt="i"><a href="user_info/user_info.html">Наши пользователи</a></li>
-					<li><img src="" alt="i"><a href="#">FAQ</a></li>
-					<li><img src="" alt="i"><a href="#">Новости</a></li>
-					<li><img src="" alt="i"><a href="company/company.html">О компании</a></li>
-					<li><img src="" alt="i"><a href="contact/contact.html">Контакты</a></li>
+					<li><img class="fa" src="img/icon/home.png" alt="i"><a href="index.html">Обзор</a></li>
+					<li><img class="fa" src="img/icon/costumerOrder.png" alt="i"><a href="catalog_flower/index.html">Заказы</a></li>
+					<li><img class="fa" src="img/icon/ordStatus.png" alt="i"><a href="catalog_plant/index.html">Текущее состояние заказов</a></li>
+					<li><img class="fa" src="img/icon/add_orders_ico.png" alt="i"><a href="#">Online предложения</a></li>
+					<li><img class="fa" src="img/icon/doc.png" alt="i"><a href="user_info/user_info.html">Документы</a></li>
+					<li><img class="fa" src="img/icon/costumerPref.png" alt="i"><a href="#">Предпочтения</a></li>
+					<li><img class="fa" src="img/icon/claims_ico.png" alt="i"><a href="#">Рекламации</a></li>
+					<li><img class="fa" src="img/icon/possible_pos.png" alt="i"><a href="company/company.html">Позиции для будущей закупки</a></li>
+					<li><img class="fa" src="img/icon/zapret.png" alt="i"><a href="contact/contact.html">Абсолютные запреты</a></li>
+					<li><img class="fa" src="img/icon/sortStat.png" alt="i"><a href="contact/contact.html">Cтатистика закупки сортов</a></li>
+					<li><img class="fa" src="img/icon/mix.png" alt="i"><a href="contact/contact.html">Мои миксы</a></li>
+					<li><img class="fa" src="img/icon/costumerPlant.png" alt="i"><a href="contact/contact.html">Плантации и их сортовые листы</a></li>
+					<li><img class="fa" src="img/icon/our_range_of_procurement_ico.png" alt="i"><a href="contact/contact.html">Ассортимент нашей закупки</a></li>
+					<li><img class="fa" src="img/icon/matrix.png" alt="i"><a href="contact/contact.html">Матрица распаковок</a></li>
+					<li><img class="fa" src="img/icon/monitorPrise.png" alt="i"><a href="contact/contact.html">Монитор цен свободного рынка</a></li>
 				</ul>
 			</div>
 		</div>
@@ -230,10 +236,12 @@
                                 <option value="ktm" >ktm</option>
                                 <option value="..." >...</option>
                           </select>
-                          <label for="start">Дата:</label>
-                          <input type="date" id="start" name="trip-start" data-date-format="dd.mm.YYYY" value="2019-07-18">
-                          <label for="end">-</label>
-                          <input type="date" id="end" name="trip-end" data-date-format="dd.mm.YYYY" value="2019-07-31">
+                          <div class="date_filter">
+                              <label for="start">Дата:</label>
+                              <input type="date" id="start" name="trip-start" data-date-format="dd.mm.YYYY" value="2019-07-18">
+                              <label for="end">-</label>
+                              <input type="date" id="end" name="trip-end" data-date-format="dd.mm.YYYY" value="2019-07-31">
+                          </div>
                       </form>
                   </div>
                   <div class="order_new">
