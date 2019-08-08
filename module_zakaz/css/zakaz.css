@@ -243,11 +243,12 @@ nav ul, nav li {
   .order_new-mobile {
     display: none;
     position: fixed;
+    width: 40px;
     bottom: 5%;
     right: 10px;
     z-index: 9999; }
     .order_new-mobile img {
-      width: 40px; }
+      width: 100%; }
   .order_title {
     text-align: center;
     display: flex;
