@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <!-- Mobile Specific Metas ======================== -->
+   <meta name="viewport" content="width=device-width">
+   <!-- CSS ========================================== -->
+   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+   <link rel="stylesheet" href="css/zakaz_stroke.css">
+   <link rel="stylesheet" href="css/media_zakaz_stroke.css">
+</head>
+<body>
+    <div class="stroke">
+        <!-- Шапка с информацией по заказу -->
+        <div class="stroke_info">
+        	<div class="stroke_info-menu">
+        		<a href="#">Меню <img src="img/down_ico.png" alt="i"></a>
+        		<ul class="menu_item">
+        			<li><a href="#">Создать новый заказ на основе текущего</a></li>
+        			<li><a href="#">Мои миксыны</a></li>
+        			<li><a href="#">Остановить закупку заказ</a></li>
+        			<li><a href="#">Просьба расформировать заказ</a></li>
+        			<li><a href="#">Не показывать строки с "FB"=0</a></li>
+        			<li><a href="#">История заказа</a></li>
+        		</ul>
+        	</div>
+        	<div class="stroke_info-main">
+        		<div class="stroke_info-main-id">
+        			<p class="title">№ (ID)</p>
+        			<p class="title_active">31335</p>
+        		</div>
+        		<div class="stroke_info-main-mark">
+        			<p class="title">Маркировка</p>
+        			<p class="title_active">audi</p>
+        		</div>
+        		<div class="stroke_info-main-date">
+        			<p class="title">Дата прибытия в точку</p>
+        			<p class="title_active">18-07-2019 <span>[Четверг]</span></p>
+        		</div>
+        		<div class="stroke_info-main-dot">
+        			<p class="title">Точка</p>
+        			<p class="title_active">Amsterdam</p>
+        		</div>
+        		<div class="stroke_info-main-trak">
+        			<p class="title">Трак</p>
+        			<p class="title_active">Leon-Ukraine</p>
+        		</div>
+        		<div class="stroke_info-main-status">
+        			<p class="title">Статус</p>
+        			<p class="status">не отправлен</p>
+        		</div>
+        	</div>
+        	<div class="stroke_info-send">
+        		<div class="send">
+        			<a href="#">Отправить</a>
+        		</div>
+        		<div class="save">
+        			<a href="#">Сохранить как <img src="img/down_ico.png" alt="i"></a>
+        			<ul class="menu_item">
+						<li><a href="#">Сохранить заказ</a></li>
+						<li><a href="#">Сохранить заказ как новый (не отправленный)</a></li>
+						<li><a href="#">Сохранить заказ в Exel</a></li>
+					</ul>
+        		</div>
+        		<div class="close">
+        			<a href="#">Закрыть</a>
+        		</div>
+        	</div>
+        </div>
+        <div class="stroke_add">
+        <h3>Добавить в заказ:</h3>
+        	<form>
+        		<label for="type">Тип:</label>
+        		<select id="">
+        			<option selected>Rose</option>
+        			<option>Carnation</option>
+        			<option>Carnation mini-spray</option>
+        			<option>Gypsophila</option>
+        			<option>Alstromeria</option>
+        			<option>Spray roses</option>
+        			<option>Callas</option>
+        			<option>Greens_ferns</option>
+        			<option>Chrysants 1 bloom</option>
+        			<option>Lilium</option>
+        			<option>Lisianthus</option>
+        			<option>Godetia</option>
+        			<option>Exotics</option>
+        			<option>Summerflowers</option>
+        		</select>
+        		<label for="sort">Сорт:</label>
+        		<input class="filter_sort" type="text" name="sort">
+        		<label for="size">Размер:</label>
+        		<input class="filter_size" type="text" name="size">
+        		<label for="fb">FB:</label>
+        		<input class="filter_fb"  type="text" name="fb">
+        		<label for="plant">Плантация:</label>
+        		<input class="filter_plant" type="text" name="plant">
+        		<label for="country">Страна:</label>
+        		<input class="filter_country" type="text" name="country">
+        		<label for="color">Цвет:</label>
+        		<input class="filter_color" type="text" name="color">
+        		<input type="submit" value="Добавить">
+        	</form>
+        </div>
+        <div class="stroke_added">
+        	
+        </div>
+        <div class="stroke_title">
+        	<div class="stroke_title-number">
+                <p>№</p>      
+            </div>
+            <div class="stroke_title-card">
+                <img src="img/card.png" alt="i">	
+            </div>
+            <div class="stroke_title-select">
+                <input type="checkbox">
+            </div>
+            <div class="stroke_title-country">
+            	<p>Страна</p>
+            </div>
+            <div class="stroke_title-plant">
+                <p>Плантация</p>
+            </div>
+            <div class="stroke_title-plant-only">
+                <img src="img/palm_ico.png" alt="i">
+            </div>
+            <div class="stroke_title-color">
+				<a href="#">Цвет<img src="img/arrow_filter_ico.png" alt="i"></a>
+            </div>
+            <div class="stroke_title-type">
+				<a href="#">Тип<img src="img/arrow_filter_ico.png" alt="i"></a>
+            </div>
+            <div class="stroke_title-sort">
+				<a href="#">Сорт<img src="img/arrow_filter_ico.png" alt="i"></a>
+            </div>
+            <div class="stroke_title-procent">
+                <p>%</p>
+            </div>
+            <div class="stroke_title-size">
+				<a href="#">Размер<img src="img/arrow_filter_ico.png" alt="i"></a>
+            </div>
+            <div class="stroke_title-fb">
+            	<p>FB</p>
+            	<p>2.25 <span>[39]</span></p>
+            </div>
+            <div class="stroke_title-confirmed">
+            	<p>Подтв.</p>
+            	<p class="active">2.50</p>
+            </div>
+            <div class="stroke_title-wait">
+            	<p>Ждет подтв.</p>
+            	<p class="active">0.00</p>
+            </div>
+            <div class="stroke_title-notfb">
+            	<p>Нехватка</p>
+            	<p class="active">0.00</p>
+            </div>
+            <div class="stroke_title-size-select">
+            	<p class="not_shorter">&le;</p>
+            	<p class="no_longer">&ge;</p>
+            </div>
+            <div class="stroke_title-stop">
+               	<p class="stop">Стоп цена</p>
+                <p class="dot">Точка</p>
+                <p class="fob">FOB</p>
+            </div>
+        </div>
+        <div class="stroke_items">
+        	<div class="stroke_item">
+				<div class="stroke_item-number">
+					<p>1</p>      
+				</div>
+				<div class="stroke_item-card">
+					<a href="#"><img src="img/card.png" alt="i"></a>
+				</div>
+				<div class="stroke_item-select">
+					<input type="checkbox">
+				</div>
+				<div class="stroke_item-country">
+					<p>ecu</p>
+				</div>
+				<div class="stroke_item-plant">
+					<p>1. stamps y box</p>
+					<p>2. latina farms</p>
+				</div>
+				<div class="stroke_title-plant-only">
+					<input type="checkbox">
+				</div>
+				<div class="stroke_item-color">
+					<p>dark (hot) pink</p>
+				</div>
+				<div class="stroke_item-type">
+					<p>rose</p>
+				</div>
+				<div class="stroke_item-sort">
+					<a href="#">art deco</a>
+				</div>
+				<div class="stroke_item-procent">
+					<p class="red">42.86%</p>
+				</div>
+				<div class="stroke_item-size">
+					<select>
+						<option>60</option>
+						<option>60/70</option>
+						<option>80</option>
+						<option>80/90</option>
+						<option>90</option>
+						<option>90/100</option>
+						<option>100</option>
+						<option>100/120</option>
+						<option>120</option>
+					</select>
+				</div>
+				<div class="stroke_item-fb">
+					<p><span class="yes">0.25</span> <input type="number" value="0.00" min="0.00" step="0.25"></p>
+				</div>
+				<div class="stroke_item-confirmed">
+					<p><span class="yes">0.50</span></p>
+				</div>
+				<div class="stroke_item-wait">
+					<p>0.00</p>
+				</div>
+				<div class="stroke_item-notfb">
+					<p>0.00</p>
+				</div>
+				<div class="stroke_item-size-select">
+					<form>
+						<input type="checkbox">
+						<input type="checkbox">
+					</form>
+				</div>
+				<div class="stroke_item-stop">
+					<div class="first">
+						<p>0.00</p>
+						<p>0.00</p>
+               		</div>
+					<div class="last">
+						<input type="number" value="0.00" min="0.00" step="0.25">
+						<input type="number" value="0.00" min="0.00" step="0.25">
+					</div>
+				</div>
+       			<div class="stroke_item-menu">
+       				<a href="#" class="dropdown">
+       					<img src="img/menu_stroke_ico.png" alt="menu">
+       				</a>
+       				<ul>
+                    	<li><a href="#">Управление строкой заказа</a></li>
+                        <li><a href="#">История строки</a></li>
+                    </ul>
+       			</div>
+        	</div>
+        	<div class="stroke_item">
+				<div class="stroke_item-number">
+					<p>2</p>      
+				</div>
+				<div class="stroke_item-card">
+					<a href="#"><img src="img/card.png" alt="i"></a>
+				</div>
+				<div class="stroke_item-select">
+					<input type="checkbox">
+				</div>
+				<div class="stroke_item-country">
+					<p></p>
+				</div>
+				<div class="stroke_item-plant">
+					<p></p>
+				</div>
+				<div class="stroke_title-plant-only">
+					
+				</div>
+				<div class="stroke_item-color">
+					<p></p>
+				</div>
+				<div class="stroke_item-type">
+					<p>rose</p>
+				</div>
+				<div class="stroke_item-sort">
+					<a href="#">mix color</a>
+				</div>
+				<div class="stroke_item-procent">
+					<p>100.00%</p>
+				</div>
+				<div class="stroke_item-size">
+					<select>
+						<option>60</option>
+						<option>60/70</option>
+						<option selected>80</option>
+						<option>80/90</option>
+						<option>90</option>
+						<option>90/100</option>
+						<option>100</option>
+						<option>100/120</option>
+						<option>120</option>
+					</select>
+				</div>
+				<div class="stroke_item-fb">
+					<p><span>0.00</span> <input type="number" value="0.00" min="0.00" step="0.25"></p>
+				</div>
+				<div class="stroke_item-confirmed">
+					<p><span>0.00</span></p>
+				</div>
+				<div class="stroke_item-wait">
+					<p>0.00</p>
+				</div>
+				<div class="stroke_item-notfb">
+					<p>0.00</p>
+				</div>
+				<div class="stroke_item-size-select">
+					<form>
+						<input type="checkbox">
+						<input type="checkbox">
+					</form>
+				</div>
+				<div class="stroke_item-stop">
+					<div class="first">
+						<p>0.00</p>
+						<p>0.00</p>
+               		</div>
+					<div class="last">
+						<input type="number" value="0.00" min="0.00" step="0.25">
+						<input type="number" value="0.00" min="0.00" step="0.25">
+					</div>
+				</div>
+       			<div class="stroke_item-menu">
+       				<a href="#" class="dropdown">
+       					<img src="img/menu_stroke_ico.png" alt="menu">
+       				</a>
+       				<ul>
+                    	<li><a href="#">Управление строкой заказа</a></li>
+                        <li><a href="#">История строки</a></li>
+                    </ul>
+       			</div>
+        	</div>
+        	<div class="stroke_item">
+				<div class="stroke_item-number">
+					<p>3</p>      
+				</div>
+				<div class="stroke_item-card">
+					<a href="#"><img src="img/card.png" alt="i"></a>
+				</div>
+				<div class="stroke_item-select">
+					<input type="checkbox">
+				</div>
+				<div class="stroke_item-country">
+					<p>ecu</p>
+				</div>
+				<div class="stroke_item-plant">
+					<p>1. stamps y box</p>
+					<p>2. latina farms</p>
+					<p>3. blooming acres</p>
+					<p>4. nikita flowers</p>
+					<p>5. sun roses</p>
+				</div>
+				<div class="stroke_title-plant-only">
+					<input type="checkbox">
+				</div>
+				<div class="stroke_item-color">
+					<p></p>
+				</div>
+				<div class="stroke_item-type">
+					<p>rose</p>
+				</div>
+				<div class="stroke_item-sort">
+					<a href="#">mix color</a>
+				</div>
+				<div class="stroke_item-procent">
+					<p>100.00%</p>
+				</div>
+				<div class="stroke_item-size">
+					<select>
+						<option>60</option>
+						<option>60/70</option>
+						<option selected>80</option>
+						<option>80/90</option>
+						<option>90</option>
+						<option>90/100</option>
+						<option>100</option>
+						<option>100/120</option>
+						<option>120</option>
+					</select>
+				</div>
+				<div class="stroke_item-fb">
+					<p><span>0.00</span> <input type="number" value="0.00" min="0.00" step="0.25"></p>
+				</div>
+				<div class="stroke_item-confirmed">
+					<p><span>0.00</span></p>
+				</div>
+				<div class="stroke_item-wait">
+					<p>0.00</p>
+				</div>
+				<div class="stroke_item-notfb">
+					<p>0.00</p>
+				</div>
+				<div class="stroke_item-size-select">
+					<form>
+						<input type="checkbox">
+						<input type="checkbox">
+					</form>
+				</div>
+				<div class="stroke_item-stop">
+					<div class="first">
+						<p>0.00</p>
+						<p>0.00</p>
+               		</div>
+					<div class="last">
+						<input type="number" value="0.00" min="0.00" step="0.25">
+						<input type="number" value="0.00" min="0.00" step="0.25">
+					</div>
+				</div>
+       			<div class="stroke_item-menu">
+       				<a href="#" class="dropdown">
+       					<img src="img/menu_stroke_ico.png" alt="menu">
+       				</a>
+       				<ul>
+                    	<li><a href="#">Управление строкой заказа</a></li>
+                        <li><a href="#">История строки</a></li>
+                    </ul>
+       			</div>
+        	</div>
+        	<div class="stroke_item">
+				<div class="stroke_item-number">
+					<p>4</p>      
+				</div>
+				<div class="stroke_item-card">
+					<a href="#"><img src="img/card.png" alt="i"></a>
+				</div>
+				<div class="stroke_item-select">
+					<input type="checkbox">
+				</div>
+				<div class="stroke_item-country">
+					<p>col</p>
+				</div>
+				<div class="stroke_item-plant">
+					<p>1. el cactus</p>
+				</div>
+				<div class="stroke_title-plant-only">
+					<input type="checkbox">
+				</div>
+				<div class="stroke_item-color">
+					<p>white</p>
+				</div>
+				<div class="stroke_item-type">
+					<p>rose</p>
+				</div>
+				<div class="stroke_item-sort">
+					<a href="#">mondial</a>
+				</div>
+				<div class="stroke_item-procent">
+					<p>97.00%</p>
+				</div>
+				<div class="stroke_item-size">
+					<select>
+						<option>60</option>
+						<option>60/70</option>
+						<option selected>80</option>
+						<option>80/90</option>
+						<option>90</option>
+						<option>90/100</option>
+						<option>100</option>
+						<option>100/120</option>
+						<option>120</option>
+					</select>
+				</div>
+				<div class="stroke_item-fb">
+					<p><span>0.00</span> <input type="number" value="0.00" min="0.00" step="0.25"></p>
+				</div>
+				<div class="stroke_item-confirmed">
+					<p><span>0.00</span></p>
+				</div>
+				<div class="stroke_item-wait">
+					<p>0.00</p>
+				</div>
+				<div class="stroke_item-notfb">
+					<p>0.00</p>
+				</div>
+				<div class="stroke_item-size-select">
+					<form>
+						<input type="checkbox">
+						<input type="checkbox">
+					</form>
+				</div>
+				<div class="stroke_item-stop">
+					<div class="first">
+						<p>0.00</p>
+						<p>0.00</p>
+               		</div>
+					<div class="last">
+						<input type="number" value="0.00" min="0.00" step="0.25">
+						<input type="number" value="0.00" min="0.00" step="0.25">
+					</div>
+				</div>
+       			<div class="stroke_item-menu">
+       				<a href="#" class="dropdown">
+       					<img src="img/menu_stroke_ico.png" alt="menu">
+       				</a>
+       				<ul>
+                    	<li><a href="#">Управление строкой заказа</a></li>
+                        <li><a href="#">История строки</a></li>
+                    </ul>
+       			</div>
+        	</div>
+        </div>
+	</div>
+</body>
+</html>
